@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="paho.javascript-1.0.3/paho-mqtt.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+    <header>Projeto MQTT</header>
+
+    <main>
+        <div class="form">
+            <p class="titulo">Área de acesso</p>
+
+            <div class="input-area">
+                <label for="server">Broker:</label>
+                <input type="text" name="server" id="server" class="server" value="test.mosquitto.org">
+    
+                <label for="port">Porta:</label>
+                <input type="number" name="port" id="port" class="port" value="8081">
+    
+                <label for="topic">Tópico:</label>
+                <input type="text" name="topic" id="topic" class="topic" value="teste5552">
+            </div>
+            
+            <div class="button-area">
+                <button class="gerar">Gerar cliente</button>
+            </div>
+    
+            <div class="extra-info">
+                <!-- aqui vão as informações do cliente gerado -->
+            </div>
+
+            <div class="verificar"> DESCONECTADO </div>
+        </div>
+    </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(41, 44, 53);
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    gap: 5px;
+}
+
+main > div {
+    flex-basis: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+p.titulo {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.input-area {
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: repeat(2, 40px);
+    align-items: center;
+}
+
+.button-area {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    font-weight: 900;
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.conectar:hover {
+    transition: 0.3s;
+    border-color: green;
+    color: green;
+}
+
+.desconectar:hover {
+    transition: 0.3s;
+    border-color: red;
+    color: red;
+}
+
+.criar:hover {
+    transition: 0.3s;
+    border-color: blue;
+    color: blue;
+}
+
+.extra-info {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.verificar {
+    background-color: red;
+    width: fit-content;
+    padding: 20px;
+    font-weight: 900;
+    border: 2px solid black;
+}
+
+.caixa {
+    max-height: 600px;
+    border: 1px solid black;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.titulocaixa {
+    display: block;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.caixacontent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
